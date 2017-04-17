@@ -15,6 +15,9 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 
+//Imports MDL
+import  { MdlModule } from 'angular2-mdl/';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService)
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
+    MdlModule
   ],
   providers: [],
   bootstrap: [AppComponent]
