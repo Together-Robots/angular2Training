@@ -1,3 +1,12 @@
-:host .mdl-cell{
-  background-color: #999;
+.main {
+  margin-top: -35vh;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.material{
+  border-radius: 2px;
+  padding:40px 56px 80px 56px;
+  background-color: white;
 }

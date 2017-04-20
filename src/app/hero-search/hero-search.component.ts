@@ -30,6 +30,7 @@ export class HeroSearchComponent implements OnInit {
   search(term: string): void {
     this.searchTerms.next(term);
   }
+  
   ngOnInit(): void {
     this.heroes = this.searchTerms
       .debounceTime(300)        // wait 300ms after each keystroke before considering the term
@@ -45,6 +46,7 @@ export class HeroSearchComponent implements OnInit {
         return Observable.of<Hero[]>([]);
       });
   }
+
   gotoDetail(hero: Hero): void {
     let link = ['/detail', hero.id];
     this.router.navigate(link);

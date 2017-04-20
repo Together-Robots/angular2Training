@@ -1,43 +1,19 @@
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--12-col-desktop">N</div>
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-  <div class="mdl-cell mdl-cell--1-col">1</div>
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col">4</div>
-  <div class="mdl-cell mdl-cell--4-col">4</div>
-  <div class="mdl-cell mdl-cell--4-col">4</div>
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--6-col">6</div>
-  <div class="mdl-cell mdl-cell--4-col">4</div>
-  <div class="mdl-cell mdl-cell--2-col">2</div>
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">6 (8 tablet)</div>
-  <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet">4 (6 tablet)</div>
-  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">2 (4 phone)</div>
-</div>
-
-
-<h3>Top Heroes</h3>
-<div class="grid grid-pad">
-    <a *ngFor="let hero of heroes" [routerLink]="['/detail', hero.id]" class="col-1-4">
-        <div class="module hero">
-            <h4>{{hero.name}}</h4>
+<main class="main">
+  <div class="container mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col"></div>
+    <div class="mdl-cell mdl-cell--8-col material mdl-shadow--4dp">
+      <div class="">
+        <h3>Top Heroes</h3>
+        <div class="">
+          <a *ngFor="let hero of heroes" [routerLink]="['/detail', hero.id]" class="col-1-4">
+            <div class="">
+              <h4>{{hero.name}}</h4>
+            </div>
+          </a>
         </div>
-    </a>
-</div>
-<hero-search></hero-search>
+        <hero-search></hero-search>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--2-col"></div>
+  </div>
+</main>
