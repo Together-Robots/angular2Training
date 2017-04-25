@@ -1,2 +1,14 @@
 /* Master Styles */
 
+.center {
+    text-align: center;
+}
+
+.mdl-card {
+    width: 100%;
+}
+
+.mdl-card__title{
+    min-height: 160px;
+    background: center/cover;   
+}
